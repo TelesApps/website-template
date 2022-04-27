@@ -1,0 +1,62 @@
+$templateApp-primary: (
+    main: #092151,
+    lighter: #b5bccb,
+    darker: #051437,
+    200: #092151,
+    // For slide toggle,
+    contrast:
+        (
+            main: $light-primary-text,
+            lighter: $dark-primary-text,
+            darker: $light-primary-text,
+        ),
+);
+$templateApp-accent: (
+    main: #e09900,
+    lighter: #f6e0b3,
+    darker: #d37c00,
+    200: #e09900,
+    // For slide toggle,
+    contrast:
+        (
+            main: $dark-primary-text,
+            lighter: $dark-primary-text,
+            darker: $dark-primary-text,
+        ),
+);
+
+$templateApp-warn: (
+    main: #b10f2e,
+    lighter: #e8b7c0,
+    darker: #98081d,
+    200: #b10f2e,
+    // For slide toggle,
+    contrast:
+        (
+            main: $light-primary-text,
+            lighter: $dark-primary-text,
+            darker: $light-primary-text,
+        ),
+);
+
+$templateApp-foreground: (
+    main: #000,
+    lighter: #808080,
+    darker: #000,
+    contrast: (
+        main: $dark-primary-text,
+        lighter: $dark-primary-text,
+        darker: $dark-primary-text,
+    ),
+);
+
+$templateApp-background: (
+    main: #fdffff,
+    lighter: #feffff,
+    darker: #fcffff,
+    contrast: (
+        main: $dark-primary-text,
+        lighter: $dark-primary-text,
+        darker: $dark-primary-text,
+    ),
+);
