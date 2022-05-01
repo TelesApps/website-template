@@ -1,0 +1,19 @@
+.content {
+    min-height: 90vh;
+    width: 100vw;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-area {
+    position: relative;
+    top: -80px;
+}
+
+.main-txt{
+    font-size: 2em;
+}

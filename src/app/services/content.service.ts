@@ -19,5 +19,7 @@ export class ContentService {
   public readonly logoImgSmall: string = 'https://dummyimage.com/150x100/000/fff'
   public readonly headerNavItems: Array<string> = ['Home', 'About', 'Contact Us']
 
+  public readonly landingMediaBackground = 'https://image.shutterstock.com/z/stock-photo--d-rendering-of-a-modern-villa-project-in-different-stages-of-completion-1793908093.jpg'
+
   constructor() { }
 }
