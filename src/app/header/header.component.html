@@ -1,0 +1,22 @@
+<div class="container">
+    <div *ngIf="(content.screenWidthSubj | async)! > content.$mediaSmTabletWidth else isMobile">
+        <div class="logo">
+            <img [src]="content.logoImgSmall" alt="business logo">
+        </div>
+    </div>
+    <div *ngIf="(content.screenWidthSubj | async)! > content.$mediaSmTabletWidth" class="nav-items-list">
+        <div *ngFor="let nav of content.headerNavItems" class="nav-item">
+            {{ nav }}
+        </div>
+    </div>
+    <ng-template #isMobile>
+        <div class="nav-items-list">
+            <div *ngFor="let nav of content.headerNavItems" class="nav-item" (click)="closeSidebar.emit()">
+                {{ nav }}
+            </div>
+        </div>
+        <div class="close-btn" (click)="closeSidebar.emit()">
+            <mat-icon aria-hidden="false" aria-label="close icon">close</mat-icon>
+        </div>
+    </ng-template>
+</div>

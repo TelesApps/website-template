@@ -1,12 +1,12 @@
 @import '~@angular/material/theming';
 @import 'palette';
 
-// BimDev primary theme colors.
+// Primary theme colors.
 $templateApp-app-primary: mat-palette($templateApp-primary, main, lighter, darker);
 $templateApp-app-accent:  mat-palette($templateApp-accent, main, lighter, darker);
 $templateApp-app-warn:    mat-palette($templateApp-warn, main, lighter, darker);
-// $instnt-app-foreground: mat-palette($instnt-foreground, main, lighter);
-// $instnt-app-background: mat-palette($instnt-background, main, lighter, darker);
+$templateApp-app-foreground: mat-palette($templateApp-foreground, main, lighter);
+$templateApp-app-background: mat-palette($templateApp-background, main, lighter, darker);
 
 $templateApp-app-theme: mat-light-theme($templateApp-app-primary, $templateApp-app-accent, $templateApp-app-warn);
 
@@ -35,7 +35,10 @@ $fontConfig: (
   input: mat-typography-level(inherit, 1.125, 400, 'Open Sans', 1.5px)
 );
 
-
-// .mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
-//   color: map-get($instnt-app-background, lighter);
-// }
+// Screen Size Break Points
+$mediaXLgDesktopWidth: 1901px;
+$mediaLaptopWidth: 1200px;
+$mediaTabletWidth: 1024px;
+$mediaSmTabletWidth: 768px;
+$mediaMobileWidth: 480px;
+$mediaSmMobileWidth: 320px;

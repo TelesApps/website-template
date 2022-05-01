@@ -1,0 +1,27 @@
+.mobile-header {
+    display: flex;
+}
+
+.logo {
+    padding: 4px;
+    margin-left: 4px;
+}
+
+.nav-btn {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    mat-icon {
+        transform: scale(2);
+        position: relative;
+        left: -26px;
+    }
+    mat-icon:hover {
+        cursor: pointer;
+    }
+}
+
+.header {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}

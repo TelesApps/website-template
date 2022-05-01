@@ -1,0 +1,61 @@
+@import "../../assets/theme/templateApp-theme.scss";
+
+.container {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+}
+
+.logo {
+    padding: 4px;
+    margin-left: 4px;
+}
+
+.nav-items-list {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item {
+    font-size: 14pt;
+    font-weight: 500;
+    padding: 6px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: map-get($templateApp-app-accent, main);
+}
+
+.close-btn {
+    transform: scale(2);
+    padding: 8px;
+    margin-top: 22px;
+    margin-right: 12px;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+@media (max-width: #{$mediaXLgDesktopWidth}) {
+}
+@media (max-width: #{$mediaLaptopWidth}) {
+}
+@media (max-width: #{$mediaTabletWidth}) {
+}
+@media (max-width: #{$mediaSmTabletWidth}) {
+    .container {
+        width: 80vw;
+    }
+    .nav-items-list {
+        flex-flow: column;
+        position: relative;
+        top: 44px;
+    }
+}
+@media (max-width: #{$mediaMobileWidth}) {
+}
+@media (max-width: #{$mediaSmMobileWidth}) {
+}
