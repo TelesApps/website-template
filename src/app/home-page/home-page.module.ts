@@ -5,6 +5,7 @@ import { LandingMediaComponent } from '../components/landing-media/landing-media
 import { SideBySideComponent } from '../components/side-by-side/side-by-side.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
+import { SlidingTextsComponent } from '../components/sliding-texts/sliding-texts.component';
 
 
 
@@ -13,6 +14,7 @@ import {MatListModule} from '@angular/material/list';
     HomePageComponent,
     LandingMediaComponent,
     SideBySideComponent,
+    SlidingTextsComponent,
   ],
   imports: [
     CommonModule,

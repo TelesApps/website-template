@@ -1,0 +1,24 @@
+@import "../../../assets/theme/templateApp-theme.scss";
+
+.content {
+    text-align: center;
+    background-color: map-get($templateApp-background, darker) !important;
+}
+
+.text {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-delay: initial
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
