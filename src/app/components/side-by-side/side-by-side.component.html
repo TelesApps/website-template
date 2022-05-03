@@ -1,0 +1,47 @@
+<div class="two-columns">
+    <div class="left-column">
+        <span *ngIf="isLeftImg"><ng-container *ngTemplateOutlet="image"></ng-container></span>
+        <span *ngIf="!isLeftImg"><ng-container *ngTemplateOutlet="text"></ng-container></span>
+    </div>
+    <div class="right-column">
+        <span *ngIf="!isLeftImg"><ng-container *ngTemplateOutlet="image"></ng-container></span>
+        <span *ngIf="isLeftImg"><ng-container *ngTemplateOutlet="text"></ng-container></span>
+    </div>
+</div>
+
+<ng-template #image>
+    <img width="100%"
+        src="https://image.shutterstock.com/z/stock-vector-architectural-wireframe-bim-design-d-illustration-1875530830.jpg"
+        alt="">
+</ng-template>
+
+<ng-template #text>
+    <div class="text-section">
+        <div class="title">
+            <h2>Building Information Modeling Development</h2>
+        </div>
+        <div class="sub-title">
+            <h3>Have you ever thought to yourself “The Autodesk ecosystem is great, but I really wish it could do this
+                one thing that is very specific to my company”? Well, it can!</h3>
+        </div>
+        <div class="text-content">
+            <mat-list>
+                <mat-list-item>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">done_outline</mat-icon>
+                    <p>Get assistance so that the Architectural, Engineering and Construction industries make the most
+                        out of their BIM processes.</p>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">done_outline</mat-icon>
+                    <p>Get custom applications for your use case and implement any functionalities provided by the
+                        software API.</p>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">done_outline</mat-icon>
+                    <p>Get the resources we have to help you integrate with any Autodesk product using the vast network
+                        we've built</p>
+                </mat-list-item>
+            </mat-list>
+        </div>
+    </div>
+</ng-template>

@@ -11,6 +11,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import { LandingMediaComponent } from './components/landing-media/landing-media.component';
 import { HomePageModule } from './home-page/home-page.module';
+import { SideBySideComponent } from './components/side-by-side/side-by-side.component';
 
 @NgModule({
   declarations: [

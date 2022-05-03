@@ -22,6 +22,10 @@
     font-size: 14pt;
     font-weight: 500;
     padding: 6px;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .nav-item:hover {

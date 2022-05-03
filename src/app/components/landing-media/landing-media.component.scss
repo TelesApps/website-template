@@ -1,5 +1,7 @@
+@import "../../../assets/theme/templateApp-theme.scss";
+
 .content {
-    min-height: 90vh;
+    min-height: 88vh;
     width: 100vw;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -14,6 +16,30 @@
     top: -80px;
 }
 
-.main-txt{
-    font-size: 2em;
+.txt-area{
+    h1 {
+        font-weight: 600;
+        text-shadow: 1px 1px 2px map-get($templateApp-background, main);
+        font-size: 3em;
+    }
+    h3 {
+        font-weight: 500;
+        text-shadow: 1px 1px 2px map-get($templateApp-background, main);
+        font-size: 2em;
+    }
+}
+
+.video-content {
+    height: 88vh;
+    overflow: hidden;
+}
+
+.videoTxt {
+    position: relative;
+    top: -82vh;
+    height: 0px;
+    h1, h3 {
+        color: map-get($templateApp-background, darker);;
+        text-shadow: 1px 1px 2px map-get($templateApp-foreground, lighter);
+    }
 }

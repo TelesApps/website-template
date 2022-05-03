@@ -1,0 +1,32 @@
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    width: 50vw;
+}
+
+.right-column {
+    width: 50vw;
+}
+
+.text-section {
+    margin: 20px;
+}
+
+.title {
+    h2 {
+        font-size: 2em;
+    }
+}
+
+.sub-title {
+    margin-left: 12px;
+    width: 80%;
+}
+
+.text-content {
+    margin-left: 12px;
+    width: 78%;
+}

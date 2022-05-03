@@ -9,6 +9,9 @@ import { ContentService } from 'src/app/services/content.service';
 export class LandingMediaComponent implements OnInit {
 
   @Input() backgrounUrl: string = '';
+  @Input() titleTxt: string = 'Main Text To Catch the Eye Here';
+  @Input() titleSubTxt: string = 'A good Subtext Here to state your busineess mission'
+  @Input() videoSource: string = '../../../assets/media/analytics-clip.mp4';
   
   constructor(public content: ContentService) { }
 

@@ -1,10 +1,15 @@
-<div class="content" [ngStyle]="{background: 'url(' + backgrounUrl + ')'}">
-    <div class="txt-area">
-        <div class="main-txt">
-            <h1>Major Text Here</h1>
-        </div>
-        <div class="sub-txt">
-            <h3>A good catch phrase here</h3>
-        </div>
+<div *ngIf="!videoSource" class="content" [ngStyle]="{background: 'url(' + backgrounUrl + ')'}">
+    <div class="txt-area" style="text-align: center;">
+        <h1>{{ titleTxt }}</h1>
+        <h3>{{titleSubTxt}}</h3>
+    </div>
+</div>
+<div *ngIf="videoSource" class="video-content">
+    <video style="width: 100%;" autoplay="autoplay" loop muted>
+        <source [src]='videoSource' type='video/mp4' />
+    </video>
+    <div class="txt-area videoTxt" style="text-align: center;">
+        <h1>{{ titleTxt }}</h1>
+        <h3>{{titleSubTxt}}</h3>
     </div>
 </div>
