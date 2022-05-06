@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SlidingTextsComponent } from './sliding-texts.component';
+import { SlidingTextsComponent } from './slide-in.component';
 
 describe('SlidingTextsComponent', () => {
   let component: SlidingTextsComponent;

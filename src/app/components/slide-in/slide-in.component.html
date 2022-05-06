@@ -1,0 +1,6 @@
+<div #container class="container">
+    <!-- <div style="margin-top: 100%;"><h2>text</h2></div> -->
+    <div #content [ngClass]="direction" *ngIf="isInView">
+        <ng-content></ng-content>
+    </div>
+</div>

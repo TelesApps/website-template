@@ -1,0 +1,57 @@
+@import "../../../assets/theme/templateApp-theme.scss";
+
+.container {
+  height: inherit;
+  overflow: hidden;
+}
+.from-right {
+    animation-name: fromRight;
+}
+
+.from-left {
+  position: relative;
+  animation-name: fromLeft;
+}
+
+.from-bottom {
+  animation-name: fromBottom;
+  position: relative;
+}
+ 
+
+// KEYFRAMES BELLOW
+  @keyframes fromRight {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: inherit;
+    }
+  }
+
+  @keyframes fromLeft {
+    from {
+      left: -100%;
+      //width: 100%;
+    }
+  
+    to {
+      left: 0%;
+      //width: inherit;
+    }
+  }
+
+  @keyframes fromBottom {
+    from {
+      top: 100%;
+      //height: 100%;
+    }
+  
+    to {
+      top: 0%;
+      //height: inherit;
+    }
+  }
