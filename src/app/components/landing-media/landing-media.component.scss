@@ -32,7 +32,7 @@
 }
 
 .video-content {
-    height: m;
+    height: fit-content;
     max-height: calc(88vh - (-1vw));
     overflow: hidden;
 }
@@ -49,7 +49,7 @@
 
 @media (max-width: #{$mediaXLgDesktopWidth}) { }
 @media (max-width: 1500px) {
-    .container {
+    .video-content {
         height: 56vw;
     }
  }
