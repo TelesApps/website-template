@@ -1,10 +1,9 @@
 <app-landing-media [backgrounUrl]="content.landingMediaBackground"></app-landing-media>
-<app-side-by-side [isLeftImg]="true"></app-side-by-side>
-<app-side-by-side [isLeftImg]="false"></app-side-by-side>
-<app-slide-in [direction]="'from-right'" [duration]="'3s'" [height]="'200px'">
-    <h2>Child Components</h2>
+<app-slide-in [direction]="'from-right'" [duration]="'3s'">
     <div class="text">
         <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
         <span>Eliminate tedious modeling, drafting, and detailing tasks through automation</span>
     </div>
 </app-slide-in>
+<app-side-by-side [isLeftImg]="true"></app-side-by-side>
+<app-side-by-side [isLeftImg]="false"></app-side-by-side>

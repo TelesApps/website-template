@@ -1,6 +1,9 @@
 @import "../../../assets/theme/templateApp-theme.scss";
 
-.content {
+.container {
+    height: fit-content;
+}
+.image-content {
     min-height: 88vh;
     width: 100vw;
     background-position: center !important;
@@ -9,14 +12,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.txt-area {
-    position: relative;
-    top: -80px;
+    overflow: hidden;
 }
 
 .txt-area{
+    text-align: center;
+    position: relative;
+    bottom: 7vw;
     h1 {
         font-weight: 600;
         text-shadow: 1px 1px 2px map-get($templateApp-background, main);
@@ -30,16 +32,48 @@
 }
 
 .video-content {
-    height: 88vh;
+    height: m;
+    max-height: calc(88vh - (-1vw));
     overflow: hidden;
 }
 
 .videoTxt {
     position: relative;
-    top: -82vh;
-    height: 0px;
+    text-align: center;
+    top: -38vw;
     h1, h3 {
         color: map-get($templateApp-background, darker);;
         text-shadow: 1px 1px 2px map-get($templateApp-foreground, lighter);
     }
 }
+
+@media (max-width: #{$mediaXLgDesktopWidth}) { }
+@media (max-width: 1500px) {
+    .container {
+        height: 56vw;
+    }
+ }
+@media (max-width: #{$mediaLaptopWidth}) { 
+    .txt-area{
+        h1 {
+            font-size: 2em;
+        }
+        h3 {
+            font-size: 1em;
+        }
+    }
+}
+@media (max-width: #{$mediaTabletWidth}) { }
+@media (max-width: #{$mediaSmTabletWidth}) { }
+@media (max-width: #{$mediaMobileWidth}) {
+    .txt-area{
+        bottom: 30vw;
+        h1 {
+            font-size: 16pt;
+        }
+        h3 {
+            font-size: 14pt;
+        }
+    }
+ }
+@media (max-width: #{$mediaSmMobileWidth}) { }
