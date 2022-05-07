@@ -45,6 +45,15 @@ mat-card {
     padding: 4px;
 }
 
+.title {
+    h3 {font-size: 1.6em;}
+}
+
+.description {
+    font-size: 12pt;
+    line-height: 24px;
+}
+
 .two-size {
     width: 48%;
 }
@@ -54,3 +63,10 @@ mat-card {
 .four-size {
     width: 23%;
 }
+
+@media (max-width: #{$mediaXLgDesktopWidth}) { }
+@media (max-width: #{$mediaLaptopWidth}) { }
+@media (max-width: #{$mediaTabletWidth}) { }
+@media (max-width: #{$mediaSmTabletWidth}) { }
+@media (max-width: #{$mediaMobileWidth}) { }
+@media (max-width: #{$mediaSmMobileWidth}) { }
