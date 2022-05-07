@@ -41,8 +41,8 @@ mat-card {
 }
 
 .feature {
-    margin-top: 18px;
-    padding: 4px;
+    margin: 20px;
+    padding: 10px 40px 10px 40px;
 }
 
 .title {
@@ -55,7 +55,7 @@ mat-card {
 }
 
 .two-size {
-    width: 48%;
+    width: 48% !important;
 }
 .three-size {
     width: 32%;
@@ -65,8 +65,24 @@ mat-card {
 }
 
 @media (max-width: #{$mediaXLgDesktopWidth}) { }
-@media (max-width: #{$mediaLaptopWidth}) { }
-@media (max-width: #{$mediaTabletWidth}) { }
-@media (max-width: #{$mediaSmTabletWidth}) { }
+@media (max-width: #{$mediaLaptopWidth}) {
+    .content {
+        width: 95vw;
+    }
+ }
+@media (max-width: #{$mediaTabletWidth}) {
+    .content {
+        padding: 16px 6px 16px 6px;
+    }
+    .feature {
+        margin: 6px;
+        padding: 10px 10px 10px 10px;
+    }
+ }
+@media (max-width: #{$mediaSmTabletWidth}) {
+    .features-area {
+        flex-wrap: wrap;
+    }
+ }
 @media (max-width: #{$mediaMobileWidth}) { }
 @media (max-width: #{$mediaSmMobileWidth}) { }

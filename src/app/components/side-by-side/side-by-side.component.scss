@@ -1,3 +1,7 @@
+@import "../../../assets/theme/templateApp-theme.scss";
+
+// #TODO the layout needs to be redone, instead of left and right column, have image and text columns.
+
 .two-columns {
     display: flex;
     justify-content: space-between;
@@ -30,3 +34,33 @@
     margin-left: 12px;
     width: 78%;
 }
+
+@media (max-width: #{$mediaXLgDesktopWidth}) { }
+@media (max-width: #{$mediaLaptopWidth}) {
+    .text-content {
+        width: 100%;
+    }
+    .sub-title {
+        width: 100%;
+    }
+ }
+@media (max-width: #{$mediaTabletWidth}) {
+    .two-columns {
+        flex-wrap: wrap;
+    }
+    .left-column {
+        width: 100vw;
+        height: 40vw;
+        overflow: hidden;
+    }
+    .right-column {
+        width: 100%;
+        padding: 12px;
+    }
+    .text-content {
+    }
+ }
+@media (max-width: #{$mediaSmTabletWidth}) {
+ }
+@media (max-width: #{$mediaMobileWidth}) { }
+@media (max-width: #{$mediaSmMobileWidth}) { }
