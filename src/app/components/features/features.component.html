@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="content">
+        <div class="text-center title">
+            <h2>{{featureTitle}}</h2>
+        </div>
+        <div class="text-center sub-title">
+            <p>{{featureSubtitle}}</p>
+        </div>
+        <div class="flex-around features-area">
+            <div class="text-center feature"
+                [ngClass]="{'two-size':features.length < 3, 'three-size':features.length < 4, 'four-size':features.length > 3}"
+                *ngFor="let feature of features">
+                <div *ngIf="!useMatCard">
+                    <div class="icon" [ngStyle]="{color: feature.iconColorHex}">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon">{{feature.matIcon}}</mat-icon>
+                    </div>
+                    <div class="title">
+                        <h3>{{feature.title}}</h3>
+                    </div>
+                    <div class="description">{{feature.description}}</div>
+                </div>
+                <mat-card *ngIf="useMatCard">
+                    <div class="icon" [ngStyle]="{color: feature.iconColorHex}">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon">{{feature.matIcon}}</mat-icon>
+                    </div>
+                    <div class="title">
+                        <h3>{{feature.title}}</h3>
+                    </div>
+                    <div class="description">{{feature.description}}</div>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

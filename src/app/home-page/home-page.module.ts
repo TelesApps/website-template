@@ -6,7 +6,8 @@ import { SideBySideComponent } from '../components/side-by-side/side-by-side.com
 import { MatIconModule } from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import { SlideInComponent } from '../components/slide-in/slide-in.component';
-
+import { FeaturesComponent } from '../components/features/features.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -15,11 +16,13 @@ import { SlideInComponent } from '../components/slide-in/slide-in.component';
     LandingMediaComponent,
     SideBySideComponent,
     SlideInComponent,
+    FeaturesComponent
   ],
   imports: [
     CommonModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ]
 })
 export class HomePageModule { }

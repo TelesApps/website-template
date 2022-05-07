@@ -22,7 +22,7 @@ import { HomePageModule } from './home-page/home-page.module';
     HomePageModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

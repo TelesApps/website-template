@@ -1,8 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import "/src/assets/theme/templateApp-theme.scss";
 
-html, body { height: 100%; }
+html, body { height: 100%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-drawer-container, .mat-list-base .mat-list-item {
+    color: map-get($templateApp-foreground, main) !important;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-center {
+    text-align: center;
+}
 
 .mat-drawer-content {
     overflow: hidden !important;

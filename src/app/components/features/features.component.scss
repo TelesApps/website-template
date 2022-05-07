@@ -1,0 +1,56 @@
+@import "../../../assets/theme/templateApp-theme.scss";
+
+.container {
+    background-color: map-get($templateApp-foreground, main);
+}
+
+.content {
+    width: 70vw;
+    margin: auto;
+    padding: 66px 6px 66px 6px;
+    color: map-get($templateApp-background, main);
+}
+
+.title {
+    h2 {
+        font-size: 2.3em;
+    }
+}
+
+.sub-title {
+    font-size: 14pt;
+    margin: 8px;
+}
+
+.features-area {
+    margin: 6px;
+}
+
+mat-card {
+    background-color: map-get($templateApp-foreground, lighter);
+    padding: 12px 32px;
+    height: 100%;
+    color: map-get($templateApp-background, main);
+}
+
+.icon {
+    padding: 40px;
+    mat-icon {
+        transform: scale(3);
+    }
+}
+
+.feature {
+    margin-top: 18px;
+    padding: 4px;
+}
+
+.two-size {
+    width: 48%;
+}
+.three-size {
+    width: 32%;
+}
+.four-size {
+    width: 23%;
+}
