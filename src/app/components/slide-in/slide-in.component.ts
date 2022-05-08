@@ -15,6 +15,7 @@ export class SlideInComponent implements OnInit, AfterViewChecked {
   isInView: boolean = false
   @Input() direction: string = 'from-right';
   @Input() duration: string = '3s';
+  @Input() delay: string = ''
   @Input() height: string = ''
   @Input() width: string = ''
 
@@ -43,6 +44,8 @@ export class SlideInComponent implements OnInit, AfterViewChecked {
     if (this.contentDiv) {
       if (this.duration)
         this.contentDiv.nativeElement.style.animationDuration = this.duration;
+      if (this.delay)
+        this.contentDiv.nativeElement.style.animationDelay = this.delay;
     }
     if (this.containerDiv) {
       if (this.height)
