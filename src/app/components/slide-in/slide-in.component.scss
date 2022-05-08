@@ -6,18 +6,19 @@
   padding: 20px;
 }
 .from-right {
-  margin-left: 101%;
-  width: 100%;
+  animation-fill-mode: both;
   animation-name: fromRight;
 }
 
 .from-left {
+  animation-fill-mode: both;
   position: relative;
   left: -100%;
   animation-name: fromLeft;
 }
 
 .from-bottom {
+  animation-fill-mode: both;
   animation-name: fromBottom;
   top: 100%;
   position: relative;
@@ -26,7 +27,7 @@
 // KEYFRAMES BELLOW
 @keyframes fromRight {
   from {
-    margin-left: 100%;
+    margin-left: 101%;
     width: 100%;
   }
 
