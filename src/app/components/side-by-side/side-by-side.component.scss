@@ -19,20 +19,8 @@
     margin: 20px;
 }
 
-.title {
-    h2 {
-        font-size: 2em;
-    }
-}
-
-.sub-title {
-    margin-left: 12px;
-    width: 80%;
-}
-
 .text-content {
     margin-left: 12px;
-    width: 78%;
 }
 
 @media (max-width: #{$mediaXLgDesktopWidth}) { }

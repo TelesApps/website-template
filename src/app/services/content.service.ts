@@ -20,9 +20,16 @@ export class ContentService {
   public readonly logoImgSmall: string = 'https://dummyimage.com/150x100/000/fff'
   public readonly headerNavItems: Array<string> = ['Home', 'About', 'Contact Us']
   public readonly landingMediaBackground = `https://image.shutterstock.com/z/stock-photo--d-rendering-of-a-modern-villa-project-in-different-stages-of-completion-1793908093.jpg`
-  public readonly featuresTitle: string = 'Service You Can Trust'
-  public readonly featuresSubtitle: string = `We pride ourselves in building meaningfull relationships with our client by
-  delivering what you need when you need it`
+  public readonly landingMediaVideoSource = '../../../assets/media/analytics-clip.mp4'
+  public readonly landingMediaTitleTxt = `BIM Development`
+  public readonly landingMediaTitleSubTxt = `Developing the tools you need`
+  public readonly sideBySideImgSrc = `https://image.shutterstock.com/z/stock-vector-architectural-wireframe-bim-design-d-illustration-1875530830.jpg`
+  public readonly sideBySideTxtTitle = 'Building Information Modeling Development';
+  public readonly sideBySideSubTitleTxt = `Have you ever thought to yourself “The Autodesk ecosystem is great, but I really wish it could do this
+  one thing that is very specific to my company”? Well, it can!`;
+  public readonly featuresTitle: string = 'Service You Can Trust';
+  public readonly featuresSubtitle: string = `We pride ourselves in building meaningfull relationships with our client through mutual
+  agreements that benefits everyone`;
   public readonly features: Array<Feature> = [
     {
       matIcon: 'home',

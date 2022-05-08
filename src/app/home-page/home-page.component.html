@@ -1,11 +1,13 @@
-<app-landing-media [backgrounUrl]="content.landingMediaBackground"></app-landing-media>
-<app-slide-in [direction]="'from-right'" [duration]="'3s'">
-    <div class="text">
-        <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-        <span>Eliminate tedious modeling, drafting, and detailing tasks through automation</span>
+<app-landing-media [backgrounUrl]="content.landingMediaBackground" [titleTxt]="content.landingMediaTitleTxt"
+    [titleSubTxt]="content.landingMediaTitleSubTxt" [videoSource]="content.landingMediaVideoSource"></app-landing-media>
+<app-side-by-side [isLeftImg]="true" [imgSrc]="content.sideBySideImgSrc" [txtTitle]="content.sideBySideTxtTitle"
+    [subTitleTxt]="content.sideBySideSubTitleTxt">
+    <div class="title">
+        <h2>{{ content.sideBySideTxtTitle }}</h2>
     </div>
-</app-slide-in>
-<app-side-by-side [isLeftImg]="true">
+    <div class="sub-title">
+        <h3>{{ content.sideBySideSubTitleTxt }}</h3>
+    </div>
     <mat-list>
         <mat-list-item>
             <mat-icon aria-hidden="false" aria-label="Example home icon">done_outline</mat-icon>
@@ -24,5 +26,11 @@
         </mat-list-item>
     </mat-list>
 </app-side-by-side>
+<app-slide-in [direction]="'from-right'" [duration]="'3s'">
+    <div class="text">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+        <span>Eliminate tedious modeling, drafting, and detailing tasks through automation</span>
+    </div>
+</app-slide-in>
 <app-features [featureTitle]="content.featuresTitle" [featureSubtitle]="content.featuresSubtitle"
     [features]="content.features"></app-features>
